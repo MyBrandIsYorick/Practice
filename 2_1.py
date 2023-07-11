@@ -13,7 +13,7 @@ def main():
     if choice == robot_color:
         print("Вы угадали!!!")
     else:
-        match choice:
+        match robot_color:
             case "red":
                 c = randint(0, 1)
                 if c == 0:
