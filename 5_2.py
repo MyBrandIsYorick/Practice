@@ -5,9 +5,13 @@ def searching():
     author = str(input("Введите автора, которого хотели бы найти - "))
     with open("books.csv", encoding="utf-8") as r_file:
         file_reader = csv.DictReader(r_file, delimiter=",")
+        count = 0
         for row in file_reader:
             if row["Автор"] == author:
                 print(row)
+                count += 1
+    if count == 0:
+        print("Книги данного автора не найдены")
     main()
 
 
