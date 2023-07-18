@@ -1,7 +1,8 @@
 from functools import reduce
 
+
 l = input().split()
-a=[]
+a = []
 for i in range(0, len(l)):
    a.append(float(l[i]))
-print(reduce(lambda x, y: x + y, a)/ len(l))
+print(reduce(lambda x, y: x + y, a) / len(l))
