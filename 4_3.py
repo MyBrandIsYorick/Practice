@@ -11,6 +11,6 @@ def simple(n):
 
 a, b = map(int, input("Введите диапазон чисел").split())
 
-for i in range(a, b+1):
+for i in range(a, b + 1):
     if simple(i):
         print(i)
